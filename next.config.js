@@ -26,7 +26,10 @@ module.exports = withBundleAnalyzer(
       ]
     },
     experimental: {
-      serverComponentsExternalPackages: ["sharp", "onnxruntime-node"]
+      serverComponentsExternalPackages: ["sharp", "onnxruntime-node"],
+      serverActions: {
+        allowedOrigins : ["localhost:3000","https://zany-space-orbit-65jv44x6p4vf4xr6-3000.app.github.dev/","https://aolwpmpelrczgxugfifc.supabase.co"]
+      }
     }
   })
 )
